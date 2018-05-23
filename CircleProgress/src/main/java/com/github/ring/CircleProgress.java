@@ -245,7 +245,6 @@ public class CircleProgress extends View {
         }
 
         float angle = (float) AndroidUtils.chuFa(viewProgress*getEffectiveDegree(),viewMax,2);
-        Log("angle==="+angle);
         if(!isClockwise){
             angle=-1*angle;
         }
@@ -529,7 +528,6 @@ public class CircleProgress extends View {
         return this;
     }
     private void setCircleProgress(int progress,int max) {
-        Log(progress+"=setCircleProgress=="+max);
         if(onCircleProgressInter !=null){
             onCircleProgressInter.progress(progress,max);
         }
