@@ -54,7 +54,7 @@
         <android.support.v7.widget.AppCompatCheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="是否显示过度颜色"
+            android:text="是否显示过度效果"
             android:textColor="@color/blue_00"
             android:checked="false"
             />
