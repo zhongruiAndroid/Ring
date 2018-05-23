@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18B4ED</color>
+    <color name="colorPrimaryDark">#18B4ED</color>
+    <color name="colorPrimaryDark2">#18B4ED</color>
+    <color name="colorPrimaryDark1">#87ceeb</color>
+    <color name="colorAccent">#848484</color>
+
+
+    <color name="theme_color">#3a92e9</color>
+    <color name="press_theme_color">#419BF3</color>
+    <color name="gray_f6">#f6f6f6</color>
+    <color name="gray_332">#000000</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_44">#444444</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_ea">#eaeaea</color>
+    <color name="gray_d7">#d7d7d7</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_61">#616161</color>
+    <color name="background_f2">#f2f2f2</color>
+    <color name="image_bg">#FFF1EFEF</color>
+    <color name="gray_d4">#d4d4d4</color>
+    <color name="gray_dd">#DDDDDD</color>
+    <color name="green">#2DDB97</color>
+    <color name="green_press">#FF20D18C</color>
+    <color name="green1">#34e8a6</color>
+    <color name="green2">#22ddb0</color>
+    <color name="green_qian">#E6F9F7</color>
+    <color name="gray_ban">#50000000</color>
+
+
+    <color name="home_green">#06C1AE</color>
+    <color name="home_text_color">#419BF3</color>
+    <color name="orange">#FFC820</color>
+    <color name="orange_press">#eaa304</color>
+    <color name="blue">#4ed3fd</color>
+    <color name="red">#fc353a</color>
+    <color name="gray_press">#FFE4E0E0</color>
+    <color name="blue_press">#E2419BF3</color>
+    <color name="black_33">#333333</color>
+    <color name="home_title">#2ACBE0</color>
+    <color name="orange_ff">#ff712b</color>
+    <color name="orange_ff2">#FFF2EB</color>
+    <color name="blue_00">#419BF3</color>
+    <color name="hint_color">#FFC8C8C8</color>
+
+
+    <color name="colorText">#848484</color>
+    <color name="c_icon_normal">#848484</color>
+    <color name="c_icon">#56abe4</color>
+    <color name="colorPrimaryAlpha">#70000000</color>
+    <color name="colorPrimaryAlpha1">#BF58C2F7</color>
+    <color name="white">#ffffff</color>
+    <color name="white_half">#86FFFFFF</color>
+    <color name="gray_AB">#616161</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#70000000</color>
+    <color name="transparent_half_darker">#90000000</color>
+    <color name="transparent_half_darker_darker">#a0000000</color>
+    <color name="transparent_half_darker_darker_dark">#b0000000</color>
+    <color name="border_e52">#e5e5e5</color>
+    <color name="border_e5">#B2B2B2</color>
+    <color name="c_F8F8F81">#C0C5CA</color>
+    <color name="c_F8F8F83">#BEC2C7</color>
+    <color name="c_B2B2B2">#B2B2B2</color>
+    <color name="c_F8F8F82">#DFE4EA</color>
+    <color name="c_cccccc">#cccccc</color>
+    <color name="c_divider">#E2E2E2</color>
+    <color name="c_press">#E2E2E2</color>
+    <color name="c_press_bt">#41A5D6</color>
+    <color name="blue_point">#18B4ED</color>
+    <!-- 主题颜色-->
+    <color name="top_color1">#20000000</color>
+    <color name="top_color2">#FFCECBCB</color>
+    <!-- 黑色 -->
+    <color name="cutting_line">#dfdfdf</color>
+    <color name="wheel_unselect_text">#c2c1c1</color>
+    <color name="wheel_bg">#f2f2f2</color>
+    <color name="common_line">#D1D1D1</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

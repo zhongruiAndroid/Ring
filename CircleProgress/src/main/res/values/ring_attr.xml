@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+        <!--刻度长度-->
+        <attr name="keduLength" format="dimension"></attr>
+        <!--刻度宽度-->
+        <attr name="keduWidth" format="dimension"></attr>
+        <!--刻度颜色-->
+        <attr name="keduColor" format="color"></attr>
+        <!--整点刻度长度-->
+        <attr name="zhengkeduLength" format="dimension"></attr>
+        <!--整点刻度宽度-->
+        <attr name="zhengkeduWidth" format="dimension"></attr>
+        <!--整点刻度颜色-->
+        <attr name="zhengkeduColor" format="color"></attr>
+        <!--时钟半径-->
+        <attr name="clockRadius" format="dimension"></attr>
+        <!--时钟背景-->
+        <attr name="clockColor" format="color"></attr>
+        <!--时钟边框宽度-->
+        <attr name="clockBorderWidth" format="dimension"></attr>
+        <!--时钟边框颜色-->
+        <attr name="clockBorderColor" format="color"></attr>
+        <!--时钟中心圆点半径-->
+        <attr name="clockPointRadius" format="dimension"></attr>
+        <!--时钟中心圆点颜色-->
+        <attr name="clockPointColor" format="color"></attr>
+        <!--时钟内边距-->
+        <attr name="clockPadding" format="dimension"></attr>
+
+
+        <!--时针长度-->
+        <attr name="shiZhenLength" format="dimension"/>
+        <attr name="shiZhenLengthD" format="dimension"/>
+        <!--时针宽度-->
+        <attr name="shiZhenWidth" format="dimension"/>
+        <!--时针颜色-->
+        <attr name="shiZhenColor" format="color"/>
+
+        <!--分针长度-->
+        <attr name="fenZhenLength" format="dimension"/>
+        <attr name="fenZhenLengthD" format="dimension"/>
+        <!--分针宽度-->
+        <attr name="fenZhenWidth" format="dimension"/>
+        <!--分针颜色-->
+        <attr name="fenZhenColor" format="color"/>
+
+
+        <!--秒针长度-->
+        <attr name="miaoZhenLength" format="dimension"/>
+        <attr name="miaoZhenLengthD" format="dimension"/>
+        <!--秒针宽度-->
+        <attr name="miaoZhenWidth" format="dimension"/>
+        <!--秒针颜色-->
+        <attr name="miaoZhenColor" format="color"/>
+
+
+        <!--绘制时间间隔1-1000毫秒-->
+        <attr name="timeInterval" format="integer"/>
+        <!--刻度数字大小-->
+        <attr name="clockTextSize" format="dimension"/>
+        <!--刻度数字颜色-->
+        <attr name="clockTextColor" format="color"/>
+        <!--刻度数字与刻度的间隔-->
+        <attr name="clockTextDistance" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <!--内圆颜色-->
+        <attr name="neiYuanColor" format="color"/>
+        <!--圆环半径-->
+        <attr name="ringRadius" format="dimension"/>
+        <!--圆环宽度-->
+        <attr name="ringWidth" format="dimension"/>
+        <!--圆环颜色-->
+        <attr name="ringColor" format="color"/>
+        <!--圆环进度颜色-->
+        <attr name="ringProgressColor" format="color"/>
+        <!--圆环进度过度颜色-->
+        <attr name="ringProgressSecondColor" format="color"/>
+        <!--开始角度-->
+        <attr name="startAngle" format="integer"/>
+        <!--是否顺时针-->
+        <attr name="isClockwise" format="boolean"/>
+        <!--当前进度-->
+        <attr name="progress" format="integer"/>
+        <!--总进度-->
+        <attr name="maxProgress" format="integer"/>
+        <!--不绘制的度数-->
+        <attr name="disableAngle" format="integer"/>
+        <!--圆环进度是否为圆角-->
+        <attr name="isRound" format="boolean"/>
+        <!--是否设置动画-->
+        <attr name="useAnimation" format="boolean"/>
+        <!--动画执行时间-->
+        <attr name="duration" format="integer"/>
+        <!--进度百分比数值是否含小数-->
+        <!--<attr name="progressPercent" format="integer"/>-->
+        <attr name="isDecimal" format="boolean"/>
+        <!--小数点后几位-->
+        <attr name="decimalPointLength" format="integer"/>
+        <!--是否显示百分比-->
+        <attr name="isShowPercentText" format="boolean"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="color"/>
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>
