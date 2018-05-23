@@ -72,6 +72,13 @@
             android:textColor="@color/blue_00"
             android:checked="false"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前进度(不是百分比):10"
+            android:textColor="@color/blue_00"
+            android:layout_marginLeft="20dp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -121,7 +128,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:paddingLeft="10dp"
             >
             <TextView
