@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ClockView">
-        <!--刻度长度-->
+    <!--<declare-styleable name="ClockView">
+        &lt;!&ndash;刻度长度&ndash;&gt;
         <attr name="keduLength" format="dimension"></attr>
-        <!--刻度宽度-->
+        &lt;!&ndash;刻度宽度&ndash;&gt;
         <attr name="keduWidth" format="dimension"></attr>
-        <!--刻度颜色-->
+        &lt;!&ndash;刻度颜色&ndash;&gt;
         <attr name="keduColor" format="color"></attr>
-        <!--整点刻度长度-->
+        &lt;!&ndash;整点刻度长度&ndash;&gt;
         <attr name="zhengkeduLength" format="dimension"></attr>
-        <!--整点刻度宽度-->
+        &lt;!&ndash;整点刻度宽度&ndash;&gt;
         <attr name="zhengkeduWidth" format="dimension"></attr>
-        <!--整点刻度颜色-->
+        &lt;!&ndash;整点刻度颜色&ndash;&gt;
         <attr name="zhengkeduColor" format="color"></attr>
-        <!--时钟半径-->
+        &lt;!&ndash;时钟半径&ndash;&gt;
         <attr name="clockRadius" format="dimension"></attr>
-        <!--时钟背景-->
+        &lt;!&ndash;时钟背景&ndash;&gt;
         <attr name="clockColor" format="color"></attr>
-        <!--时钟边框宽度-->
+        &lt;!&ndash;时钟边框宽度&ndash;&gt;
         <attr name="clockBorderWidth" format="dimension"></attr>
-        <!--时钟边框颜色-->
+        &lt;!&ndash;时钟边框颜色&ndash;&gt;
         <attr name="clockBorderColor" format="color"></attr>
-        <!--时钟中心圆点半径-->
+        &lt;!&ndash;时钟中心圆点半径&ndash;&gt;
         <attr name="clockPointRadius" format="dimension"></attr>
-        <!--时钟中心圆点颜色-->
+        &lt;!&ndash;时钟中心圆点颜色&ndash;&gt;
         <attr name="clockPointColor" format="color"></attr>
-        <!--时钟内边距-->
+        &lt;!&ndash;时钟内边距&ndash;&gt;
         <attr name="clockPadding" format="dimension"></attr>
 
 
-        <!--时针长度-->
+        &lt;!&ndash;时针长度&ndash;&gt;
         <attr name="shiZhenLength" format="dimension"/>
         <attr name="shiZhenLengthD" format="dimension"/>
-        <!--时针宽度-->
+        &lt;!&ndash;时针宽度&ndash;&gt;
         <attr name="shiZhenWidth" format="dimension"/>
-        <!--时针颜色-->
+        &lt;!&ndash;时针颜色&ndash;&gt;
         <attr name="shiZhenColor" format="color"/>
 
-        <!--分针长度-->
+        &lt;!&ndash;分针长度&ndash;&gt;
         <attr name="fenZhenLength" format="dimension"/>
         <attr name="fenZhenLengthD" format="dimension"/>
-        <!--分针宽度-->
+        &lt;!&ndash;分针宽度&ndash;&gt;
         <attr name="fenZhenWidth" format="dimension"/>
-        <!--分针颜色-->
+        &lt;!&ndash;分针颜色&ndash;&gt;
         <attr name="fenZhenColor" format="color"/>
 
 
-        <!--秒针长度-->
+        &lt;!&ndash;秒针长度&ndash;&gt;
         <attr name="miaoZhenLength" format="dimension"/>
         <attr name="miaoZhenLengthD" format="dimension"/>
-        <!--秒针宽度-->
+        &lt;!&ndash;秒针宽度&ndash;&gt;
         <attr name="miaoZhenWidth" format="dimension"/>
-        <!--秒针颜色-->
+        &lt;!&ndash;秒针颜色&ndash;&gt;
         <attr name="miaoZhenColor" format="color"/>
 
 
-        <!--绘制时间间隔1-1000毫秒-->
+        &lt;!&ndash;绘制时间间隔1-1000毫秒&ndash;&gt;
         <attr name="timeInterval" format="integer"/>
-        <!--刻度数字大小-->
+        &lt;!&ndash;刻度数字大小&ndash;&gt;
         <attr name="clockTextSize" format="dimension"/>
-        <!--刻度数字颜色-->
+        &lt;!&ndash;刻度数字颜色&ndash;&gt;
         <attr name="clockTextColor" format="color"/>
-        <!--刻度数字与刻度的间隔-->
+        &lt;!&ndash;刻度数字与刻度的间隔&ndash;&gt;
         <attr name="clockTextDistance" format="dimension"/>
 
-    </declare-styleable>
+    </declare-styleable>-->
     <declare-styleable name="CircleProgress">
         <!--内圆颜色-->
         <attr name="neiYuanColor" format="color"/>
