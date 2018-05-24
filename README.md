@@ -35,6 +35,32 @@ circleProgress.setOnCircleProgressInter(new CircleProgress.OnCircleProgressInter
 });
 ```
 
+```xml
+<com.github.ring.CircleProgress
+    android:id="@+id/circleprogress"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    app:textSize="22sp"
+    app:decimalPointLength="1"
+    app:isShowPercentText="true"
+    app:progress="120"
+    app:maxProgress="200"
+    app:ringProgressColor="@color/blue_00"
+    app:ringProgressSecondColor="@color/green"
+    app:disableAngle="0"
+    app:duration="1000"
+    app:isClockwise="true"
+    app:isDecimal="true"
+    app:isRound="true"
+    app:useAnimation="true"
+    app:ringColor="@color/top_color1"
+    app:neiYuanColor="@color/transparent"
+    app:ringRadius="90dp"
+    app:ringWidth="10dp"
+    app:textColor="@color/blue_00"
+    />
+```
+
 [ ![Download](https://api.bintray.com/packages/zhongrui/mylibrary/CircleProgress/images/download.svg) ](https://bintray.com/zhongrui/mylibrary/CircleProgress/_latestVersion)<--版本号  
 
 ```gradle
