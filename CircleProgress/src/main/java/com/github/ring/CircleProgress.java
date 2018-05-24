@@ -321,8 +321,10 @@ public class CircleProgress extends View {
         return startAngle;
     }
 
-    public void setStartAngle(int startAngle) {
+    public CircleProgress setStartAngle(int startAngle) {
         this.startAngle = startAngle;
+        invalidateCircleProgress();
+        return this;
     }
 
     public void setProgress(int progress, boolean useAnimation) {

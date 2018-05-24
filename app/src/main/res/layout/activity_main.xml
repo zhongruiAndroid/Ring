@@ -38,6 +38,7 @@
         android:gravity="center_vertical"
         >
         <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_quekou"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="是否有缺口"
@@ -45,18 +46,20 @@
             android:checked="false"
             />
         <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_wenzi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="是否显示文字"
             android:textColor="@color/blue_00"
-            android:checked="false"
+            android:checked="true"
             />
         <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_secondcolor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="是否显示过度效果"
+            android:text="是否有过度颜色"
             android:textColor="@color/blue_00"
-            android:checked="false"
+            android:checked="true"
             />
     </LinearLayout>
     <LinearLayout
@@ -66,16 +69,18 @@
         android:gravity="center_vertical"
         >
         <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_shunshizhong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="是否顺时针"
             android:textColor="@color/blue_00"
-            android:checked="false"
+            android:checked="true"
             />
         <TextView
+            android:id="@+id/tv_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="当前进度(不是百分比):10"
+            android:text="总进度10,当前进度:10"
             android:textColor="@color/blue_00"
             android:layout_marginLeft="20dp"
             />
@@ -97,8 +102,11 @@
             android:ems="4"
             />
         <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/sb_startangle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:max="720"
+            android:progress="270"
             />
     </LinearLayout>
         <LinearLayout
@@ -117,7 +125,7 @@
                 android:ems="4"
                 />
             <android.support.v7.widget.AppCompatSeekBar
-                android:id="@+id/seekbar"
+                android:id="@+id/sb_progress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -139,7 +147,7 @@
                 android:ems="4"
                 />
             <android.support.v7.widget.AppCompatSeekBar
-                android:id="@+id/seekbar2"
+                android:id="@+id/sb_disangle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:max="360"
