@@ -100,6 +100,7 @@ public class CircleProgress extends View {
         initAttr(attrs);
     }
     private void initAttr(AttributeSet attrs) {
+        initPaint();
         if (attrs == null) {
             return;
         }
@@ -129,7 +130,6 @@ public class CircleProgress extends View {
         textSize = (int) typedArray.getDimension(R.styleable.CircleProgress_textSize, getDef_TextSize());
         typedArray.recycle();
 //        initData();
-        initPaint();
     }
     private int getTransparentColor(){
         return ContextCompat.getColor(getContext(),R.color.transparent);
