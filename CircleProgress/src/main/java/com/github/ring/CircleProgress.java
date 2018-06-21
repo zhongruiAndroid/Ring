@@ -60,9 +60,9 @@ public class CircleProgress extends View {
     //总进度
     private int maxProgress=100;
 
-    //用与逻辑计算的总进度(主要使动画效果更平滑)
+    //用于逻辑计算的总进度(主要使动画效果更平滑)
     private final int viewMax=3600;
-    //用与逻辑计算的当前进度(主要使动画效果更平滑)
+    //用于逻辑计算的当前进度(主要使动画效果更平滑)
     private int viewProgress=progress*viewMax/maxProgress;
 
     //不绘制的度数
