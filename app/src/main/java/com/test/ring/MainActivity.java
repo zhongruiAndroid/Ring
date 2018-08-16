@@ -1,5 +1,7 @@
 package com.test.ring;
 
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -32,8 +34,19 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         circleprogress = (CircleProgress) findViewById(R.id.circleprogress);
         circleprogress.setOnCircleProgressInter(new CircleProgress.OnCircleProgressInter() {
             @Override
-            public void progress(int progress, int max) {
-                tv_progress.setText("总进度"+circleprogress.getMaxProgress()+",当前进度:"+progress);
+            public void progress(float scaleProgress, float progress, float max) {
+                tv_progress.setText("总进度"+circleprogress.getMaxProgress()+",当前进度:"+progress+",动画执行进度:"+scaleProgress);
+            }
+        });
+
+        circleprogress.post(new Runnable() {
+            @Override
+            public void run() {
+                LinearGradient linearGradient = new LinearGradient(0,0,
+                        circleprogress.getWidth(),circleprogress.getHeight(),
+                        circleprogress.getRingProgressColor(), ContextCompat.getColor(MainActivity.this,R.color.green),
+                        Shader.TileMode.MIRROR);
+                circleprogress.setProgressShader(linearGradient);
             }
         });
         sb_startangle = (AppCompatSeekBar) findViewById(R.id.sb_startangle);
@@ -68,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         });
 
         sb_progress = (AppCompatSeekBar) findViewById(R.id.sb_progress);
-        sb_progress.setMax(circleprogress.getMaxProgress());
-        sb_progress.setProgress(circleprogress.getProgress());
+        sb_progress.setMax((int) circleprogress.getMaxProgress());
+        sb_progress.setProgress((int) circleprogress.getProgress());
         sb_progress.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -119,9 +132,14 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
             break;
             case R.id.cb_secondcolor:
                 if(isChecked){
-                    circleprogress.setRingProgressSecondColor(ContextCompat.getColor(this,R.color.green));
+                    LinearGradient linearGradient = new LinearGradient(0,0,
+                            circleprogress.getWidth(),circleprogress.getHeight(),
+                            circleprogress.getRingProgressColor(), ContextCompat.getColor(this,R.color.green),
+                            Shader.TileMode.MIRROR);
+
+                    circleprogress.setProgressShader(linearGradient);
                 }else{
-                    circleprogress.setRingProgressSecondColor(circleprogress.getRingProgressColor());
+                    circleprogress.setProgressShader(null);
                 }
             break;
             case R.id.cb_shunshizhong:

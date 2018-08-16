@@ -18,7 +18,6 @@
         app:progress="120"
         app:maxProgress="200"
         app:ringProgressColor="@color/blue_00"
-        app:ringProgressSecondColor="@color/green"
         app:disableAngle="0"
         app:duration="1000"
         app:isClockwise="true"

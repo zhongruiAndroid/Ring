@@ -76,16 +76,14 @@
         <attr name="ringColor" format="color"/>
         <!--圆环进度颜色-->
         <attr name="ringProgressColor" format="color"/>
-        <!--圆环进度过度颜色-->
-        <attr name="ringProgressSecondColor" format="color"/>
         <!--开始角度-->
         <attr name="startAngle" format="integer"/>
         <!--是否顺时针-->
         <attr name="isClockwise" format="boolean"/>
         <!--当前进度-->
-        <attr name="progress" format="integer"/>
+        <attr name="progress" format="float"/>
         <!--总进度-->
-        <attr name="maxProgress" format="integer"/>
+        <attr name="maxProgress" format="float"/>
         <!--不绘制的度数-->
         <attr name="disableAngle" format="integer"/>
         <!--圆环进度是否为圆角-->
