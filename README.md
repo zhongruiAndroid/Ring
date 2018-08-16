@@ -8,11 +8,10 @@
 | ringWidth               | dimension | 圆环宽度                                                                         |
 | ringColor               | color     | 圆环颜色                                                                         |
 | ringProgressColor       | color     | 圆环进度颜色                                                                     |
-| ringProgressSecondColor | color     | 圆环进度过度颜色，默认为ringColor                                                |
 | startAngle              | integer   | 开始角度,默认为-90(12点钟方向),0度是3点钟方向,90度是6点钟方向                    |
 | isClockwise             | boolean   | 是否顺时针,默认true                                                              |
-| progress                | integer   | 当前进度                                                                         |
-| maxProgress             | integer   | 总进度,默认100                                                                   |
+| progress                | float   | 当前进度                                                                         |
+| maxProgress             | float   | 总进度,默认100                                                                   |
 | disableAngle            | integer   | 不绘制的角度(圆环缺损角度)                                                       |
 | isRound                 | boolean   | 圆环进度是否为圆角,默认true                                                      |
 | useAnimation            | boolean   | 是否设置动画,默认true(setProgress方法执行动画时获取progress建议设置监听事件获取) |
@@ -29,8 +28,8 @@
 CircleProgress circleprogress = (CircleProgress) findViewById(R.id.circleprogress);
 circleProgress.setOnCircleProgressInter(new CircleProgress.OnCircleProgressInter() {
     @Override
-    public void progress(int progress, int max) {
-        //总进度max,当前进度:progress
+    public void progress(float scaleProgress, float progress, float max) {
+        //总进度max,当前进度:progress,动画执行进度:scaleProgress
     }
 });
 ```
@@ -46,7 +45,6 @@ circleProgress.setOnCircleProgressInter(new CircleProgress.OnCircleProgressInter
     app:progress="120"
     app:maxProgress="200"
     app:ringProgressColor="@color/blue_00"
-    app:ringProgressSecondColor="@color/green"
     app:disableAngle="0"
     app:duration="1000"
     app:isClockwise="true"
@@ -59,6 +57,20 @@ circleProgress.setOnCircleProgressInter(new CircleProgress.OnCircleProgressInter
     app:ringWidth="10dp"
     app:textColor="@color/blue_00"
     />
+```
+
+#### 设置过度颜色
+```java
+circleprogress.post(new Runnable() {
+    @Override
+    public void run() {
+        LinearGradient linearGradient = new LinearGradient(0,0,
+                circleprogress.getWidth(),circleprogress.getHeight(),
+                circleprogress.getRingProgressColor(), ContextCompat.getColor(MainActivity.this,R.color.green),
+                Shader.TileMode.MIRROR);
+        circleprogress.setProgressShader(linearGradient);
+    }
+});
 ```
 
 [ ![Download](https://api.bintray.com/packages/zhongrui/mylibrary/CircleProgress/images/download.svg) ](https://bintray.com/zhongrui/mylibrary/CircleProgress/_latestVersion)<--版本号  
