@@ -37,8 +37,7 @@ apply plugin: 'com.jfrog.bintray'
 
 // 项目引用的版本号，比如compile 'com.yanzhenjie:andserver:1.0.1'中的1.0.1就是这里配置的。
 version = jcenter_version as String
-def jcenterName = jcenter_libname as String
-def moduleName = jcenter_module_name as String
+def jcenter_name = jcenter_name as String
 
 // 定义两个链接，下面会用到。
 def siteUrl = jcenter_siteUrl as String    //项目主页  project homepage
@@ -122,8 +121,8 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = jcenterName  // 上传到maven库。
-        name = moduleName //jcenter_package_name as String  // 发布到Bintray上的项目名字，这里的名字不是compile 'com.yanzhenjie:andserver:1.0.1'中的andserver。
+        repo = "mylibrary"  // 上传到maven库。
+        name = jcenter_name //jcenter_package_name as String  // 发布到Bintray上的项目名字，这里的名字不是compile 'com.yanzhenjie:andserver:1.0.1'中的andserver。
         userOrg = 'zhongrui' // Bintray的用户名，2016年11月更新。
         websiteUrl = siteUrl
         vcsUrl = gitUrl
