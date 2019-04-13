@@ -72,7 +72,7 @@ circleprogress.post(new Runnable() {
     }
 });
 ```  
-### 如果本库对您有帮助,还希望支付宝扫一扫下面二维码,你我同时免费获取奖励金
+### 如果本库对您有帮助,还希望支付宝扫一扫下面二维码,你我同时免费获取奖励金(非常感谢 Y(^-^)Y)
 ![github](https://github.com/zhongruiAndroid/SomeImage/blob/master/image/small_ali.jpg?raw=true "github")  
 
 [ ![Download](https://api.bintray.com/packages/zhongrui/mylibrary/CircleProgress/images/download.svg) ](https://bintray.com/zhongrui/mylibrary/CircleProgress/_latestVersion)<--版本号  
